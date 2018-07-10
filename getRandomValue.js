@@ -9,7 +9,7 @@
  * @returns {number}
  */
 const getRandomValue = (minValue, maxValue) => {
-  const res = Math.floor(Math.random() * (maxValue - minValue)) + minValue; 
+  const res = Math.floor(Math.random() * (maxValue - minValue)) + minValue;
   return res;
 };
 
