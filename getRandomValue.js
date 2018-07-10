@@ -9,7 +9,7 @@
  * @returns {number}
  */
 const getRandomValue = (minValue, maxValue) => {
-  const res = Math.ceil(minValue + ((Math.random() * 10000000) % (maxValue - minValue + 1)));
+  const res = Math.floor(Math.random() * (maxValue - minValue)) + minValue; 
   return res;
 };
 
