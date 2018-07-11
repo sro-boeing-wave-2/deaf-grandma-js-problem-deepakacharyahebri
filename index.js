@@ -16,8 +16,9 @@ const { prompt, print } = require('./prompt-print');
 
 let bye = 0;
 print('What do you want to say to Grandma!!');
-let message = prompt();
+let message;
 while (true) {
+  message = prompt();
   if (message === 'BYE') {
     bye += 1;
   }
@@ -30,5 +31,4 @@ while (true) {
     bye = 0;
     print('HUH?! SPEAK UP, SONNY!');
   }
-  message = prompt();
 }
